@@ -25,7 +25,7 @@ services:
       MYSQL_DATABASE: social
     volumes:
       - db_data:/var/lib/mysql
-    container_name: "${social_db}"
+    container_name: "${social}_db"
     command: mysqld --max_allowed_packet=16M
     ports:
       - "3306"
